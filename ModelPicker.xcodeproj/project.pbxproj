@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E466B878296441C200DE1599 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E466B877296441C200DE1599 /* CustomARView.swift */; };
+		E466B87B2964422F00DE1599 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E466B87A2964422F00DE1599 /* ARViewContainer.swift */; };
+		E48ADF1C296400DB0006CB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ADF1B296400DB0006CB01 /* AppDelegate.swift */; };
+		E48ADF1E296400DB0006CB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ADF1D296400DB0006CB01 /* ContentView.swift */; };
+		E48ADF22296400DC0006CB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF21296400DC0006CB01 /* Assets.xcassets */; };
+		E48ADF25296400DC0006CB01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF24296400DC0006CB01 /* Preview Assets.xcassets */; };
+		E48ADF2D296402AD0006CB01 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF2C296402AD0006CB01 /* fender_stratocaster.usdz */; };
+		E48ADF31296405D50006CB01 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF2E296405D50006CB01 /* flower_tulip.usdz */; };
+		E48ADF32296405D50006CB01 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF2F296405D50006CB01 /* chair_swan.usdz */; };
+		E48ADF33296405D50006CB01 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E48ADF30296405D50006CB01 /* toy_biplane.usdz */; };
+		E48ADF352964085E0006CB01 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ADF342964085E0006CB01 /* ModelPickerView.swift */; };
+		E48ADF37296413160006CB01 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ADF36296413160006CB01 /* PlacementButtonsView.swift */; };
+		E48ADF39296421520006CB01 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ADF38296421520006CB01 /* Model.swift */; };
+		E48ADF4229643D4D0006CB01 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E48ADF4129643D4D0006CB01 /* FocusEntity */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E466B877296441C200DE1599 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		E466B87A2964422F00DE1599 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		E48ADF18296400DB0006CB01 /* ModelPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48ADF1B296400DB0006CB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E48ADF1D296400DB0006CB01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E48ADF21296400DC0006CB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E48ADF24296400DC0006CB01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E48ADF2C296402AD0006CB01 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		E48ADF2E296405D50006CB01 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		E48ADF2F296405D50006CB01 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		E48ADF30296405D50006CB01 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		E48ADF342964085E0006CB01 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		E48ADF36296413160006CB01 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
+		E48ADF38296421520006CB01 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E48ADF15296400DB0006CB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48ADF4229643D4D0006CB01 /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E466B8762964419D00DE1599 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E48ADF1D296400DB0006CB01 /* ContentView.swift */,
+				E48ADF342964085E0006CB01 /* ModelPickerView.swift */,
+				E48ADF36296413160006CB01 /* PlacementButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E466B8792964421E00DE1599 /* ARView */ = {
+			isa = PBXGroup;
+			children = (
+				E466B877296441C200DE1599 /* CustomARView.swift */,
+				E466B87A2964422F00DE1599 /* ARViewContainer.swift */,
+			);
+			path = ARView;
+			sourceTree = "<group>";
+		};
+		E48ADF0F296400DB0006CB01 = {
+			isa = PBXGroup;
+			children = (
+				E48ADF1A296400DB0006CB01 /* ModelPicker */,
+				E48ADF19296400DB0006CB01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E48ADF19296400DB0006CB01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E48ADF18296400DB0006CB01 /* ModelPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48ADF1A296400DB0006CB01 /* ModelPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E48ADF1B296400DB0006CB01 /* AppDelegate.swift */,
+				E466B8792964421E00DE1599 /* ARView */,
+				E466B8762964419D00DE1599 /* View */,
+				E48ADF38296421520006CB01 /* Model.swift */,
+				E48ADF2B296402860006CB01 /* Models */,
+				E48ADF21296400DC0006CB01 /* Assets.xcassets */,
+				E48ADF23296400DC0006CB01 /* Preview Content */,
+			);
+			path = ModelPicker;
+			sourceTree = "<group>";
+		};
+		E48ADF23296400DC0006CB01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E48ADF24296400DC0006CB01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E48ADF2B296402860006CB01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E48ADF2F296405D50006CB01 /* chair_swan.usdz */,
+				E48ADF2E296405D50006CB01 /* flower_tulip.usdz */,
+				E48ADF30296405D50006CB01 /* toy_biplane.usdz */,
+				E48ADF2C296402AD0006CB01 /* fender_stratocaster.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E48ADF17296400DB0006CB01 /* ModelPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48ADF28296400DC0006CB01 /* Build configuration list for PBXNativeTarget "ModelPicker" */;
+			buildPhases = (
+				E48ADF14296400DB0006CB01 /* Sources */,
+				E48ADF15296400DB0006CB01 /* Frameworks */,
+				E48ADF16296400DB0006CB01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelPicker;
+			packageProductDependencies = (
+				E48ADF4129643D4D0006CB01 /* FocusEntity */,
+			);
+			productName = ModelPicker;
+			productReference = E48ADF18296400DB0006CB01 /* ModelPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E48ADF10296400DB0006CB01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E48ADF17296400DB0006CB01 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E48ADF13296400DB0006CB01 /* Build configuration list for PBXProject "ModelPicker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E48ADF0F296400DB0006CB01;
+			packageReferences = (
+				E48ADF4029643D4D0006CB01 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = E48ADF19296400DB0006CB01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E48ADF17296400DB0006CB01 /* ModelPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E48ADF16296400DB0006CB01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48ADF33296405D50006CB01 /* toy_biplane.usdz in Resources */,
+				E48ADF25296400DC0006CB01 /* Preview Assets.xcassets in Resources */,
+				E48ADF31296405D50006CB01 /* flower_tulip.usdz in Resources */,
+				E48ADF22296400DC0006CB01 /* Assets.xcassets in Resources */,
+				E48ADF32296405D50006CB01 /* chair_swan.usdz in Resources */,
+				E48ADF2D296402AD0006CB01 /* fender_stratocaster.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E48ADF14296400DB0006CB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48ADF39296421520006CB01 /* Model.swift in Sources */,
+				E48ADF37296413160006CB01 /* PlacementButtonsView.swift in Sources */,
+				E48ADF1E296400DB0006CB01 /* ContentView.swift in Sources */,
+				E466B87B2964422F00DE1599 /* ARViewContainer.swift in Sources */,
+				E48ADF1C296400DB0006CB01 /* AppDelegate.swift in Sources */,
+				E466B878296441C200DE1599 /* CustomARView.swift in Sources */,
+				E48ADF352964085E0006CB01 /* ModelPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E48ADF26296400DC0006CB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E48ADF27296400DC0006CB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48ADF29296400DC0006CB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModelPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = BQH36CFX55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.ModelPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E48ADF2A296400DC0006CB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModelPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = BQH36CFX55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.ModelPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E48ADF13296400DB0006CB01 /* Build configuration list for PBXProject "ModelPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48ADF26296400DC0006CB01 /* Debug */,
+				E48ADF27296400DC0006CB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48ADF28296400DC0006CB01 /* Build configuration list for PBXNativeTarget "ModelPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48ADF29296400DC0006CB01 /* Debug */,
+				E48ADF2A296400DC0006CB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E48ADF4029643D4D0006CB01 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E48ADF4129643D4D0006CB01 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E48ADF4029643D4D0006CB01 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E48ADF10296400DB0006CB01 /* Project object */;
+}
