@@ -15,7 +15,7 @@ struct ModelPickerView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 30) {
-                ForEach(0..<models.count) { index in
+                ForEach(0..<models.count, id: \.self) { index in
                     let model = models[index]
                     Button {
                         print("DEBUG: selected model with name: \(model.name)")

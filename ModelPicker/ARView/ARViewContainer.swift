@@ -33,6 +33,7 @@ struct ARViewContainer: UIViewRepresentable {
                 anchorEntity.addChild(modelEntity.clone(recursive: true))
                 
                 uiView.scene.addAnchor(anchorEntity)
+                uiView.installGestures(.init(arrayLiteral: [.rotation, .scale]), for: modelEntity)
             } else {
                 print("DEBUG: unable to load modelEntity for - \(model.name)")
             }
